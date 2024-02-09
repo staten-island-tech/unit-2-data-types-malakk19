@@ -20,12 +20,25 @@ if service == "great":
     print(x+ (x%25))
 
     ##challenge 3 """
-def allfactors (n):
+""" def allfactors (n):
     factors = []
     for i in range(1,n+1):
         if n%i == 0:
             factors.append(i)
-            return factors
+    return factors
 number = int(input("please enter a number: "))
-listfactors = allfactors(number)
-print(listfactors)
+listfactors = allfactors(number) """
+""" print(listfactors) """
+#challange 4
+numx = int(input("please inter the first number"))
+numy = int(input("please inter the first number"))
+def gcf(numx,numy):
+    if numx > numy:
+        x= numy
+    else:
+        x= numx
+        for i in range(1,x+1):
+            if numx%i == 0 and numy%i== 0:
+                hcf = i 
+                return hcf 
+            print(gcf(numx,numy))
